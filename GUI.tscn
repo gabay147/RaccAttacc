@@ -6,6 +6,7 @@
 margin_right = 40.0
 margin_bottom = 40.0
 script = ExtResource( 1 )
+scene_name = "GUI"
 
 [node name="Button" type="Button" parent="."]
 margin_right = 122.0
