@@ -1,6 +1,6 @@
 extends Node2D
 
-
+export (String) var scene_name = "Scenes"
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
