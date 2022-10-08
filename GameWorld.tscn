@@ -1,0 +1,10 @@
+[gd_scene format=2]
+
+[node name="GameWorld" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+margin_left = 449.0
+margin_top = 249.0
+margin_right = 540.0
+margin_bottom = 263.0
+text = "GAME WORLD"
