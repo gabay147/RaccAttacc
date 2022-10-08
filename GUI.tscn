@@ -11,3 +11,5 @@ script = ExtResource( 1 )
 margin_right = 122.0
 margin_bottom = 40.0
 text = "CHANGE SCENE"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
