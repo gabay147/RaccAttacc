@@ -1,6 +1,6 @@
 extends Control
 
-
+signal scene_changed
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://GameWorld.tscn")
+	emit_signal("scene_changed")
