@@ -4,6 +4,7 @@
 
 [node name="GameWorld" type="CanvasLayer"]
 script = ExtResource( 1 )
+scene_name = "gameworld"
 
 [node name="Label" type="Label" parent="."]
 margin_left = 449.0
