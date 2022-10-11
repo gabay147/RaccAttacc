@@ -9,7 +9,7 @@ onready var anim = get_node("AnimatedSprite")
 
 # physics variables
 var vel : Vector2 = Vector2()
-var jumpforce : int = 600
+var jumpforce : int = 400
 var gravity : int = 800
 const speed : int = 200
 var facingDir : int = 1
@@ -22,11 +22,16 @@ func _physics_process(delta):
 	vel.x = 0
 	
 	# movement inputs
-	if Input.is_action_pressed("A"):
+	if Input.is_action_pressed("left"):
 		vel.x -= speed
-	if Input.is_action_pressed("D"):
+	if Input.is_action_pressed("right"):
 		vel.x += speed
-		
+	
+	
+	# interact
+	if Input.is_action_pressed("interact"):
+		die()
+	
 	
 	# applying the velocity
 	vel = move_and_slide(vel, Vector2.UP)
@@ -50,6 +55,5 @@ func _physics_process(delta):
 # called when you die
 func die ():
 	
-	if Input.is_action_pressed("E"):
 		get_tree().reload_current_scene()
 

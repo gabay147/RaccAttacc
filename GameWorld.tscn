@@ -1,7 +1,8 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://Scenes.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Tilemap_Grid_32px.png" type="Texture" id=2]
+[ext_resource path="res://PlayerCharacter.tscn" type="PackedScene" id=3]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -925,3 +926,6 @@ tile_set = SubResource( 27 )
 cell_size = Vector2( 32, 32 )
 format = 1
 tile_data = PoolIntArray( 720901, 20, 0, 786437, 20, 0, 786441, 17, 0, 786442, 18, 0, 786443, 19, 0, 851973, 20, 0, 917509, 20, 0, 917510, 17, 0, 917511, 18, 0, 917512, 19, 0, 983045, 20, 0, 1048581, 20, 0, 1048589, 16, 0, 1048590, 21, 0, 1048591, 22, 0, 1114117, 20, 0, 1114124, 16, 0, 1114125, 14, 0, 1114126, 27, 0, 1114127, 25, 0, 1114128, 1, 0, 1114129, 1, 0, 1179652, 0, 0, 1179653, 1, 0, 1179654, 1, 0, 1179655, 1, 0, 1179656, 1, 0, 1179657, 1, 0, 1179658, 1, 0, 1179659, 1, 0, 1179660, 14, 0, 1179661, 27, 0, 1179662, 27, 0, 1179663, 27, 0 )
+
+[node name="PlayerCharacter" parent="." instance=ExtResource( 3 )]
+position = Vector2( 306, 544 )
