@@ -1,6 +1,12 @@
 extends KinematicBody2D
 
 
+
+
+# sprites and animation variables
+onready var sprite : Sprite = get_node("Sprite")
+onready var anim = get_node("AnimatedSprite")
+
 # physics variables
 var vel : Vector2 = Vector2()
 var jumpforce : int = 600
@@ -15,7 +21,7 @@ func _physics_process(delta):
 	
 	vel.x = 0
 	
-		# movement inputs
+	# movement inputs
 	if Input.is_action_pressed("A"):
 		vel.x -= speed
 	if Input.is_action_pressed("D"):
@@ -31,3 +37,19 @@ func _physics_process(delta):
 	# jump input
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		vel.y -= jumpforce
+	
+	# sprite direction
+	if vel.x < 0:
+		sprite.flip_h = true
+		facingDir = 1
+	elif vel.x > 0:
+		sprite.flip_h = false
+		facingDir = -1
+
+
+# called when you die
+func die ():
+	
+	if Input.is_action_pressed("E"):
+		get_tree().reload_current_scene()
+
