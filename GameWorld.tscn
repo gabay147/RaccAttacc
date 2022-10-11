@@ -1,6 +1,10 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
 
-[node name="GameWorld" type="Node2D"]
+[ext_resource path="res://Scenes.gd" type="Script" id=1]
+
+[node name="GameWorld" type="CanvasLayer"]
+script = ExtResource( 1 )
+scene_name = "gameworld"
 
 [node name="Label" type="Label" parent="."]
 margin_left = 449.0

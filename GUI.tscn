@@ -1,13 +1,14 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://GUI.gd" type="Script" id=1]
+[ext_resource path="res://Scenes.gd" type="Script" id=1]
 
-[node name="GUI" type="Control"]
-margin_right = 40.0
-margin_bottom = 40.0
+[node name="GUI" type="CanvasLayer"]
 script = ExtResource( 1 )
+scene_name = "gui"
 
-[node name="Button" type="Button" parent="."]
+[node name="SceneButton" type="Button" parent="."]
 margin_right = 122.0
 margin_bottom = 40.0
 text = "CHANGE SCENE"
+
+[connection signal="pressed" from="SceneButton" to="." method="_on_SceneButton_pressed"]
