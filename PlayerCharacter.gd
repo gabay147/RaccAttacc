@@ -15,38 +15,68 @@ var jumpforce : int = 400
 var gravity : int = 800
 const speed : int = 200
 var facingDir : int = 1
+var rawInput : Vector2 = Vector2()
 
 # physics
 func _physics_process(delta):
 	
-	print(get_floor_normal())
+	# 1) get player input
+	# Build a vector2 (raw directional input data)
+	# Switch states based on CONDITIONS
+	#    - isGrounded (is touching the ground)
+	#    - isJumping (spacebar pressed)
+	#    - isFalling (spacebar pressed, !isGrounded) -Is this necessary?
+	#    - isClimbing (interacted with ladder)
+	#    - isShooting
 	
-	vel.x = 0
+	# 2) pass data into move()
+	# check state thru match statement
 	
-	#Player State - Ground
-	moveGround()
-	
-	#Player State - Ladder
-	#moveLadder()
-	
-	#Player State - Shoot
-	#moveShoot()
-	
+	rawInput = Input.get_vector("left", "right", "down", "up")
+	#vel.x = 0
+	if Input.is_action_just_pressed("jump"):
+		move(rawInput, 1, delta)
+		vel.y += gravity * delta
+	else:
+		move(rawInput, 0, delta)
+		vel.y += gravity * delta
+		
+
 	
 	# interact
 	if Input.is_action_pressed("interact"):
 		die()
 	
+	#vel = 0
+	#vel = move_and_
 	
 	# applying the velocity
-	vel = move_and_slide_with_snap(vel,(Vector2.DOWN * 0.2), Vector2.UP, true)
+	#vel = move_and_slide_with_snap(vel,(Vector2.DOWN * 0.2), Vector2.UP, true)
 	
-	# gravity
-	vel.y += gravity * delta
 	
 	# jump input
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		vel.y -= jumpforce
+		
+
+func move(PlayerInput: Vector2, state, delta):
+	
+	
+	match state:
+		# isGrounded
+		0:
+			vel = move_and_slide_with_snap(Vector2(PlayerInput.x, 0) * speed, (Vector2.DOWN * 0.2), Vector2.UP, true)
+			
+			
+		# isJumping
+		1:
+			vel = move_and_slide_with_snap(Vector2(PlayerInput.x, 0) * speed, Vector2(0,0), Vector2.UP, true)
+			print("isJump")
+			vel.y -= jumpforce
+			vel = vel.normalized()
+		# isClimbing
+		2:
+			move_and_slide_with_snap(Vector2(0, PlayerInput.y), (Vector2.DOWN * 2))
+			pass
+			
 
 
 func moveGround():
@@ -64,8 +94,7 @@ func moveGround():
 	
 	
 	# jump input
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		vel.y -= jumpforce
+	
   #Player should be able to...
   # 3) shoot
 

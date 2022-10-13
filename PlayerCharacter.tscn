@@ -4,8 +4,8 @@
 [ext_resource path="res://Sprites/Gun_Rotate.png" type="Texture" id=2]
 [ext_resource path="res://PlayerCharacter.gd" type="Script" id=3]
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 25, 30 )
+[sub_resource type="CapsuleShape2D" id=19]
+radius = 19.0
 
 [sub_resource type="Animation" id=6]
 resource_name = "Falling_L"
@@ -584,7 +584,7 @@ script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0, 2 )
-shape = SubResource( 2 )
+shape = SubResource( 19 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
