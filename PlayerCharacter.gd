@@ -19,6 +19,8 @@ var facingDir : int = 1
 # physics
 func _physics_process(delta):
 	
+	print(get_floor_normal())
+	
 	vel.x = 0
 	
 	#Player State - Ground
@@ -37,7 +39,7 @@ func _physics_process(delta):
 	
 	
 	# applying the velocity
-	vel = move_and_slide(vel, Vector2.UP)
+	vel = move_and_slide_with_snap(vel,(Vector2.DOWN * 0.2), Vector2.UP, true)
 	
 	# gravity
 	vel.y += gravity * delta
