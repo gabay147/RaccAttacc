@@ -1,5 +1,9 @@
 extends KinematicBody2D
 
+var ammo : int = 15
+onready var camera : Camera2D = get_node("Camera")
+onready var muzzle : Node2D = get_node("Camera/Muzzle")
+onready var bulletScene = load("res://Bullet.tscn")
 
 # player state variables
 onready var ladder_state = false
@@ -15,6 +19,18 @@ var jumpforce : int = 400
 var gravity : int = 800
 const speed : int = 200
 var facingDir : int = 1
+var mouseDelta : Vector2 = Vector2()
+
+#func _ready ():
+	
+	# hide and lock the mouse cursor
+#	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	
+	# set the UI
+#	ui.update_health_bar(curHp, maxHp)
+#	ui.update_ammo_text(ammo)
+#	ui.update_score_text(score)
+
 
 # physics
 func _physics_process(delta):
@@ -47,6 +63,9 @@ func _physics_process(delta):
 	# jump input
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		vel.y -= jumpforce
+	
+#	var right = global_transform.basis.x
+
 
 
 func moveGround():
@@ -68,6 +87,9 @@ func moveGround():
 		vel.y -= jumpforce
   #Player should be able to...
   # 3) shoot
+	# check to see if we have shot
+	if Input.is_action_just_pressed("shoot") and ammo > 0:
+		shoot()
 
 func moveLadder():
 	pass
@@ -84,7 +106,28 @@ func moveLadder():
   #Player should be able to...
   # 1) Wait for cooldown? shoot more and launch self infinitely? Will need to play with this mechanic!
 
+func _input(event):
+	
+	if event is InputEventMouseMotion:
+		mouseDelta = event.relative
+		
 
+func shoot ():
+	
+	var bullet = bulletScene.instance()
+	get_node("/root/MainScene").add_child(bullet)
+	
+	bullet.global_transform = muzzle.global_transform
+	
+	
+	ammo -= 1
+	
+#	ui.update_ammo_text(ammo)
+
+func add_ammo (amount):
+	
+	ammo += amount
+#	ui.update_ammo_text(ammo)
 
 # called when you die
 func die ():

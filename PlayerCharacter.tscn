@@ -22,7 +22,7 @@ tracks/0/keys = {
 "values": [ 35, 36, 37 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Gun:position")
+tracks/1/path = NodePath("Camera/Gun:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -34,7 +34,7 @@ tracks/1/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 0, -2 ), Vector2( 0, -5 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Gun:visible")
+tracks/2/path = NodePath("Camera/Gun:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -61,7 +61,7 @@ tracks/0/keys = {
 "values": [ 14, 15, 16 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Gun:position")
+tracks/1/path = NodePath("Camera/Gun:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -73,7 +73,7 @@ tracks/1/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 0, -2 ), Vector2( 0, -5 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Gun:visible")
+tracks/2/path = NodePath("Camera/Gun:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -101,7 +101,7 @@ tracks/0/keys = {
 "values": [ 38, 39 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Gun:position")
+tracks/1/path = NodePath("Camera/Gun:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -113,7 +113,7 @@ tracks/1/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 0, 0 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Gun:visible")
+tracks/2/path = NodePath("Camera/Gun:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -141,7 +141,7 @@ tracks/0/keys = {
 "values": [ 17, 18 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Gun:position")
+tracks/1/path = NodePath("Camera/Gun:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -153,7 +153,7 @@ tracks/1/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 0, 0 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Gun:visible")
+tracks/2/path = NodePath("Camera/Gun:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -182,7 +182,7 @@ tracks/0/keys = {
 "values": [ 29, 30 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Gun:position")
+tracks/1/path = NodePath("Camera/Gun:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -194,7 +194,7 @@ tracks/1/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 0, -1 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Gun:visible")
+tracks/2/path = NodePath("Camera/Gun:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -223,7 +223,7 @@ tracks/0/keys = {
 "values": [ 8, 9 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Gun:position")
+tracks/1/path = NodePath("Camera/Gun:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -235,7 +235,7 @@ tracks/1/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 0, -1 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Gun:visible")
+tracks/2/path = NodePath("Camera/Gun:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -263,7 +263,7 @@ tracks/0/keys = {
 "values": [ 33, 34 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Gun:position")
+tracks/1/path = NodePath("Camera/Gun:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -275,7 +275,7 @@ tracks/1/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 0, -1.3 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Gun:visible")
+tracks/2/path = NodePath("Camera/Gun:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -303,7 +303,7 @@ tracks/0/keys = {
 "values": [ 12, 13 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Gun:position")
+tracks/1/path = NodePath("Camera/Gun:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -315,7 +315,7 @@ tracks/1/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 0, -1.3 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Gun:visible")
+tracks/2/path = NodePath("Camera/Gun:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -344,7 +344,7 @@ tracks/0/keys = {
 "values": [ 40, 41 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Gun:position")
+tracks/1/path = NodePath("Camera/Gun:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -356,7 +356,7 @@ tracks/1/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 0, 0 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Gun:visible")
+tracks/2/path = NodePath("Camera/Gun:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -385,7 +385,7 @@ tracks/0/keys = {
 "values": [ 19, 20 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Gun:position")
+tracks/1/path = NodePath("Camera/Gun:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -397,7 +397,7 @@ tracks/1/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 0, 0 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Gun:visible")
+tracks/2/path = NodePath("Camera/Gun:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -425,7 +425,7 @@ tracks/0/keys = {
 "values": [ 38, 39 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Gun:position")
+tracks/1/path = NodePath("Camera/Gun:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -437,7 +437,7 @@ tracks/1/keys = {
 "values": [ Vector2( -6, 0 ), Vector2( -3, 0 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Gun:visible")
+tracks/2/path = NodePath("Camera/Gun:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -465,7 +465,7 @@ tracks/0/keys = {
 "values": [ 17, 18 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Gun:position")
+tracks/1/path = NodePath("Camera/Gun:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -477,7 +477,7 @@ tracks/1/keys = {
 "values": [ Vector2( -6, 0 ), Vector2( -3, 0 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Gun:visible")
+tracks/2/path = NodePath("Camera/Gun:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -506,7 +506,7 @@ tracks/0/keys = {
 "values": [ 31, 32 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Gun:position")
+tracks/1/path = NodePath("Camera/Gun:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -518,7 +518,7 @@ tracks/1/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 0, -1 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Gun:visible")
+tracks/2/path = NodePath("Camera/Gun:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -547,7 +547,7 @@ tracks/0/keys = {
 "values": [ 10, 11 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Gun:position")
+tracks/1/path = NodePath("Camera/Gun:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -559,7 +559,7 @@ tracks/1/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 0, -1 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Gun:visible")
+tracks/2/path = NodePath("Camera/Gun:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -591,12 +591,6 @@ texture = ExtResource( 1 )
 hframes = 42
 frame = 8
 
-[node name="Gun" type="Sprite" parent="."]
-texture = ExtResource( 2 )
-hframes = 3
-vframes = 3
-frame = 2
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Falling_L = SubResource( 6 )
 anims/Falling_R = SubResource( 7 )
@@ -618,3 +612,14 @@ tree_root = SubResource( 4 )
 anim_player = NodePath("../AnimationPlayer")
 parameters/playback = SubResource( 5 )
 parameters/Walk/blend_position = Vector2( -0.652932, 0.0404625 )
+
+[node name="Camera" type="Camera2D" parent="."]
+
+[node name="Gun" type="Sprite" parent="Camera"]
+texture = ExtResource( 2 )
+hframes = 3
+vframes = 3
+frame = 2
+
+[node name="Muzzle" type="Node2D" parent="Camera"]
+position = Vector2( 34, 0 )
